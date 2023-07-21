@@ -1,0 +1,38 @@
+{
+  "name": "api-factory",
+  "version": "1.0.0",
+  "description": "api builder",
+  "main": "index.js",
+  "source": "src/index.js",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "build-client": "parcel build",
+    "start-client-dev": "parcel",
+    "start-server": "node server/index.js",
+    "start-server-dev": "node --watch-path=./server index.js",
+    "test": "jest"
+  },
+  "author": "sereigh",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.3",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.6.1",
+    "prettier": "^3.0.0",
+    "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
