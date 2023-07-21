@@ -1,7 +1,7 @@
-/* eslint-disable no-console */
 require('dotenv').config();
 const path = require('path');
 const express = require('express');
+const utils = require('../utils');
 
 const app = express();
 const port = 3000;
@@ -15,5 +15,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`listening on port ${port}`);
+  utils.logger.info(`listening on port ${port}`);
 });
