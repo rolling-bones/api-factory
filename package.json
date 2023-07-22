@@ -8,7 +8,8 @@
     "start-client": "cd client && npm start",
     "start-server": "node server/index.js",
     "start-server-dev": "node --watch-path=./server index.js",
-    "test": "jest"
+    "test-server": "cd server && npm test",
+    "test-client": "cd client && npm test"
   },
   "author": "sereigh",
   "license": "ISC",
@@ -21,7 +22,6 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.33.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "jest": "^29.6.1",
     "prettier": "^3.0.0",
     "process": "^0.11.10",
     "supertest": "^6.3.3"

@@ -1,7 +1,7 @@
 require('dotenv').config();
 const path = require('path');
 const express = require('express');
-const utils = require('../utils');
+const utils = require('./utils');
 
 const app = express();
 const port = 5000;
