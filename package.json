@@ -10,9 +10,8 @@
     "start-server": "cd server && npm run start:dev",
     "test-server": "cd server && npm test",
     "format": "npx prettier . --write",
-    "lint": "",
+    "lint": "npx eslint src/* --fix",
     "test": "npm run test-client && npm run test-server",
-    "pr": "npx lint-staged && npm test",
     "prepare": "husky install"
   },
   "author": "sereigh",
