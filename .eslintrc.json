@@ -12,5 +12,10 @@
     "ecmaVersion": "latest"
   },
   "plugins": ["react", "jest"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "rules": {}
 }
