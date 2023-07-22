@@ -7,9 +7,12 @@
   "scripts": {
     "start-client": "cd client && npm start",
     "test-client": "cd client && npm test",
-    "start-server": "cd server && npm start",
+    "start-server": "cd server && npm run start:dev",
     "test-server": "cd server && npm test",
-    "lint": "npx prettier . --write",
+    "format": "npx prettier . --write",
+    "lint": "",
+    "test": "npm run test-client && npm run test-server",
+    "pr": "npx lint-staged && npm test",
     "prepare": "husky install"
   },
   "author": "sereigh",
