@@ -8,7 +8,9 @@
     "start-client": "cd client && npm start",
     "test-client": "cd client && npm test",
     "start-server": "cd server && npm start",
-    "test-server": "cd server && npm test"
+    "test-server": "cd server && npm test",
+    "lint": "npx prettier . --write",
+    "prepare": "husky install"
   },
   "author": "sereigh",
   "license": "ISC",
@@ -21,6 +23,8 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.33.0",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.3",
     "prettier": "^3.0.0"
   },
   "dependencies": {

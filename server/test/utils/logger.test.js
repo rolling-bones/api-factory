@@ -1,33 +1,33 @@
-const utils = require('../../utils');
+const utils = require("../../utils");
 
-it('should print the correct log message', () => {
-  const logSpy = jest.spyOn(utils.logger, 'log');
+it("should print the correct log message", () => {
+  const logSpy = jest.spyOn(utils.logger, "log");
 
-  utils.logger.log('hello');
+  utils.logger.log("hello");
 
-  expect(logSpy).toHaveBeenCalledWith('hello');
+  expect(logSpy).toHaveBeenCalledWith("hello");
 });
 
-it('should print the correct info message', () => {
-  const logSpy = jest.spyOn(utils.logger, 'info');
+it("should print the correct info message", () => {
+  const logSpy = jest.spyOn(utils.logger, "info");
 
-  utils.logger.info('hello');
+  utils.logger.info("hello");
 
-  expect(logSpy).toHaveBeenCalledWith('hello');
+  expect(logSpy).toHaveBeenCalledWith("hello");
 });
 
-it('should print the correct warn message', () => {
-  const logSpy = jest.spyOn(utils.logger, 'warn');
+it("should print the correct warn message", () => {
+  const logSpy = jest.spyOn(utils.logger, "warn");
 
-  utils.logger.warn('hello');
+  utils.logger.warn("hello");
 
-  expect(logSpy).toHaveBeenCalledWith('hello');
+  expect(logSpy).toHaveBeenCalledWith("hello");
 });
 
-it('should print the correct error message', () => {
-  const logSpy = jest.spyOn(utils.logger, 'error');
+it("should print the correct error message", () => {
+  const logSpy = jest.spyOn(utils.logger, "error");
 
-  utils.logger.error('hello');
+  utils.logger.error("hello");
 
-  expect(logSpy).toHaveBeenCalledWith('hello');
+  expect(logSpy).toHaveBeenCalledWith("hello");
 });

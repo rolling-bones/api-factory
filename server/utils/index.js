@@ -1,4 +1,4 @@
-const { Console } = require('console');
+const { Console } = require("console");
 
 exports.logger = new Console({
   stdout: process.stdout,
